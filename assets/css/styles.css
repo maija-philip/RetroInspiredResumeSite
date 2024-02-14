@@ -1,0 +1,33 @@
+/***** Setup Page *****/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--surface-light);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    transition: 0.25s;
+  }
+  
+  *,
+  *:after,
+  *:before {
+      box-sizing: border-box;
+  }
+
+
+/***** Format Text *****/
+
+p {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}

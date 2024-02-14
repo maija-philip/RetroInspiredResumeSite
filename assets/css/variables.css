@@ -1,0 +1,80 @@
+/***** Colors *****/
+:root {
+    /* light */
+    --primary-light: #4c4ecc;
+    --on-primary-light: #ffffff;
+    --primary-container-light: #e1e0ff;
+    --on-primary-container-light: #07006c;
+    --secondary-light: #5d5c72;
+    --on-secondary-light: #ffffff;
+    --secondary-container-light: #e2e0f9;
+    --on-secondary-container-light: #191a2c;
+    --tertiary-light: #795369;
+    --on-tertiary-light: #ffffff;
+    --tertiary-container-light: #ffd8ec;
+    --on-tertiary-container-light: #2e1125;
+    --error-light: #ba1a1a;
+    --error-container-light: #ffdad6;
+    --on-error-light: #ffffff;
+    --on-error-container-light: #410002;
+    --background-light: #fffbff;
+    --on-background-light: #1c1b1f;
+    --surface-light: #fffbff; 
+    --on-surface-light: #1c1b1f;
+    --surface-variant-light: #e4e1ec;
+    --on-surface-variant-light: #47464f;
+    --outline-light: #777680;
+    --inverse-on-surface-light: #f3eff4;
+    --inverse-surface-light: #313034;
+    --inverse-primary-light: #c0c1ff;
+    --shadow-light: #000000;
+    --surface-tint-light: #4c4ecc;
+    --outline-variant-light: #c8c5d0;
+    --scrim-light: #000000;
+    /* dark */
+    --primary-dark: #c0c1ff;
+    --on-primary-dark: #170f9e;
+    --primary-container-dark: #3232b3;
+    --on-primary-container-dark: #e1e0ff;
+    --secondary-dark: #c6c4dd;
+    --on-secondary-dark: #2e2f42;
+    --secondary-container-dark: #454559;
+    --on-secondary-container-dark: #e2e0f9;
+    --tertiary-dark: #e9b9d3;
+    --on-tertiary-dark: #46263a;
+    --tertiary-container-dark: #5f3c51;
+    --on-tertiary-container-dark: #ffd8ec;
+    --error-dark: #ffb4ab;
+    --error-container-dark: #93000a;
+    --on-error-dark: #690005;
+    --on-error-container-dark: #ffdad6;
+    --background-dark: #1c1b1f;
+    --on-background-dark: #e5e1e6;
+    --surface-dark: #1c1b1f;
+    --on-surface-dark: #e5e1e6;
+    --surface-variant-dark: #47464f;
+    --on-surface-variant-dark: #c8c5d0;
+    --outline-dark: #918f9a;
+    --inverse-on-surface-dark: #1c1b1f;
+    --inverse-surface-dark: #e5e1e6;
+    --inverse-primary-dark: #4c4ecc;
+    --shadow-dark: #000000;
+    --surface-tint-dark: #c0c1ff;
+    --outline-variant-dark: #47464f;
+    --scrim-dark: #000000;
+  }
+
+/***** Fonts *****/
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lemon {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
