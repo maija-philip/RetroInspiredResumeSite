@@ -1,0 +1,17 @@
+/* Turn to most of the mobile settings */
+@media screen and (max-width: 715px) {
+
+    /* skills section */
+    #skills{
+        padding:  200px 40px;
+    }
+    #skills .flex div { margin: auto ;}
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Featured projects section */
+    #featured a { margin: 20px auto; }
+  }

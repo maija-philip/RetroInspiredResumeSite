@@ -10,7 +10,13 @@
         <link rel="icon" type="image/png" href="assets/media/logo192.png" />
 
         <!-- My Stylesheets -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/variables.css"
+        />
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/mediaqueries.css" />
 
         <!-- Google Fonts and Icons -->
         <link
@@ -25,7 +31,9 @@
         />
 
         <!-- My Javascript -->
+        <script src="assets/js/featuredProjects.js"></script>
         <script src="assets/js/engine.js"></script>
+
 
         <!-- Data about my site for browsers -->
         <meta
@@ -42,11 +50,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Maija Philip</title>
     </head>
-    <body>
+    <body  onload="loadProjects()">
+        <nav>
+            <span class="material-symbols-outlined size-48">menu</span>
+        </nav>
+
         <!-- header -->
         <header>
-            <img src="assets/media/title.svg" alt="Maija Philip, Front End Engineer, Mobile Developer, Web Developer">
+            <img
+                src="assets/media/title.svg"
+                alt="Maija Philip, Front End Engineer, Mobile Developer, Web Developer"
+            />
         </header>
+
+        <!-- Skills Section -->
+        <section id="skills" class="white">
+            <h2>Skills</h2>
+            <div class="flex">
+                <!-- mobile -->
+                <div>
+                    <span class="material-symbols-outlined size-48">Smartphone</span>
+                    <p>
+                        I am proficient in both <b>iOS</b> and <b>Android</b> Operating Systems, having worked with <b>Swift</b>, <b>Kotlin</b>, <b>React Native</b>, and <b>Flutter</b>
+                    </p>
+                </div>
+
+                <!-- web -->
+                <div>
+                    <span class="material-symbols-outlined size-48">Computer</span>
+                    <p>
+                        Web was my first coding interest and I have been working with <b>HTML</b>, <b>CSS</b>, and <b>Javascript</b> since high school. In college, I added <b>React.js</b> and <b>Node.js</b> to my repertoire.
+                    </p>
+                </div>
+
+                <!-- backend -->
+                <div>
+                    <span class="material-symbols-outlined size-48">Storage</span>
+                    <p>
+                        In college, I became proficient with <b>mySQL</b>, <b>PHP</b>, and <b>Node.js Express</b>. All these skills were backed by my classes in highschool and college that gave me a good foundation in <b>Java</b> and <b>Python</b>.
+                    </p>
+                </div>
+
+            </div>
+
+            <button>Download My Resume</button>
+        </section> <!-- skills end -->
+
+        <!-- featured projects -->
+        <section id="featured" class="primary">
+            <h2>Featured<br>Projects</h2>
+
+            <div id="featuredprojects">
+               <!-- load from js array -->
+            </div>             
+
+        </section> <!-- featured projects end -->
 
         <!-- footer -->
         <footer>

@@ -30,4 +30,134 @@ p {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    line-height: 150%;
+}
+
+
+h1 {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em
+}
+
+h2 {
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:xx-large;
+}
+
+.white { color: var(--on-primary-light) }
+.primary { color: var(--primary-light) }
+
+/***** Nav *****/
+nav {
+    padding: 8px;
+}
+
+nav span.size-48 {
+    font-size: 40px;
+    font-variation-settings: 'OPSZ' 40;
+    color: var(--secondary-light);
+  }
+
+/***** Header *****/
+
+header {
+    width: 100vw;
+}
+header img {
+    width: 50vw;
+    display: block;
+    margin: auto;
+}
+
+/***** Skills Section *****/
+
+#skills {
+    width: 100vw;
+    padding:  120px 40px;
+    text-align: center;
+
+    background-image: url("../media/Rectangle3.svg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: top center; 
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+}
+#skills .flex { margin-bottom: 30px; }
+
+#skills .flex div {
+    width: 200px;
+    margin: auto 30px;
+}
+
+button {
+    background-color: var(--primary-light);
+    border: 3px solid var(--on-primary-light);
+    border-radius: 50px;
+    color: var(--on-primary-light);
+    padding: 10px 40px;
+
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+/***** Featured Project Section *****/
+
+#featured {
+    width: 100vw;
+    padding:  70px 40px;
+    text-align: center;
+}
+
+#featuredprojects {
+    margin: 50px auto;
+    display: block;
+}
+
+#featured img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+#featured img:hover {
+    filter: brightness(60%);
+}
+#featured a {
+    display: inline-block;
+    margin: 20px;
+}
+
+/***** Project Info *****/
+
+#projectinfo {
+    width: 100%;
+    max-width: 700px;
+    min-height: calc(100vh - 170px);
+    padding:  70px 40px;
+    text-align: left;
+    margin: auto;
+}
+#projectinfo img {
+    width: 100%; 
+    margin: auto;
+    border-radius: 8px;
+}
+#projectfooter {
+    text-align: center;
+    padding: 10px;
 }
