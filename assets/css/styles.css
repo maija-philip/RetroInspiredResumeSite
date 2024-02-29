@@ -31,6 +31,7 @@ p {
     font-weight: normal;
     font-style: normal;
     line-height: 150%;
+    color: var(--on-surface-variant-light);
 }
 
 
@@ -38,7 +39,8 @@ h1 {
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3em
+    font-size: 3em;
+    color: var(--on-surface-light);
 }
 
 h2 {
@@ -46,6 +48,16 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size:xx-large;
+    color: var(--on-surface-light);
+}
+
+h3 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 150%;
+    color: var(--primary-light);
 }
 
 .white { color: var(--on-primary-light) }
@@ -98,7 +110,7 @@ header img {
 }
 #skills .flex { margin-bottom: 30px; }
 
-#skills .flex div {
+.txtFlexItem {
     width: 200px;
     margin: auto 30px;
 }
@@ -161,3 +173,23 @@ button {
     text-align: center;
     padding: 10px;
 }
+
+/***** Experience *****/
+
+#experience {
+    width: 100vw;
+    padding:  0 40px 120px 40px;
+    text-align: center;
+}
+
+#experienceheader {
+    width: fit-content;
+    margin: auto auto 40px auto;
+
+    color: var(--primary-light);
+    background-color: var(--primary-container-light);
+    border-radius: 50%;
+    padding: 60px 20px 90px 20px;
+}
+
+#experience h3 { margin-bottom: -10px; }
