@@ -1,6 +1,6 @@
 // Featured Projects Loading
 function loadProjects() {
-    console.log("here");
+    // console.log("here");
 
     const featuredProjectsDiv = document.getElementById("featuredprojects");
 
