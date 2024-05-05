@@ -33,6 +33,7 @@
         <!-- My Javascript -->
         <script src="assets/js/featuredProjects.js"></script>
         <script src="assets/js/engine.js"></script>
+        <script src="assets/js/navigation.js"></script>
 
 
         <!-- Data about my site for browsers -->
@@ -52,7 +53,30 @@
     </head>
     <body  onload="loadProjects()">
         <nav>
-            <span class="material-symbols-outlined size-48">menu</span>
+            <!-- open navigation -->
+            <button id="hamburger" onclick="toggleNavigation()">
+                <span class="material-symbols-outlined size-48" id="menu-btn">menu</span>
+                <span class="material-symbols-outlined size-48" id="hamburger-btn">Lunch_Dining</span>
+            </button>
+            
+            <!-- navigation screen with links that takes up the whole page -->
+            <button onclick="toggleNavigation()">
+                <div id="navScreen">
+                    <!-- close navigation -->
+                    <span class="material-symbols-outlined size-48" id="close-btn">close</span>
+
+                    <!-- Display links -->
+                    <div id="nav-links">
+                        <a href="home.html"><b>Home</b></a>
+                        <a href="home.html#featured"><b>Featured Projects</b></a>
+                        <a href="project.html?tag=raincoat">Raincoat</a>
+                        <a href="project.html?tag=retireplan">RetirePlan</a>
+                        <a href="project.html?tag=pantry">Pantry</a>
+                        <a href="project.html?tag=coffee">Coffee Mobile App</a>
+                        <a href="project.html?tag=ischool">School of Information Replica</a>
+                    </div>
+                </div>
+            </button>
         </nav>
 
         <!-- header -->

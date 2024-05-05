@@ -25,7 +25,7 @@ html, body {
 
 /***** Format Text *****/
 
-p {
+p, a {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -68,11 +68,61 @@ nav {
     padding: 8px;
 }
 
+nav * {
+    transition: 0.5s;
+}
+
+nav button {
+    background-color: transparent;
+    color: var(--secondary-light);
+    padding: 0;
+}
 nav span.size-48 {
     font-size: 40px;
     font-variation-settings: 'OPSZ' 40;
     color: var(--secondary-light);
-  }
+    cursor: default;
+}
+
+#hamburger-btn { 
+    display: none;
+    padding: 2px 0;
+}
+#hamburger:hover > #menu-btn { display: none; }
+#hamburger:hover > #hamburger-btn { display: block; }
+
+#navScreen {
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: var(--surface-light);
+}
+
+#navScreen span {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#nav-links {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav-links a {
+    text-decoration: none;
+    color: var(--on-surface-light);
+    margin: 5px 0;
+}
+#nav-links a:hover {
+    text-decoration: underline;
+}
 
 /***** Header *****/
 
