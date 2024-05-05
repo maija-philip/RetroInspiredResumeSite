@@ -14,4 +14,12 @@
 
     /* Featured projects section */
     #featured a { margin: 20px auto; }
+
+    /* about grid section */
+    .grid1row1, .grid1row2, .grid2row1, .grid2row2 { 
+        width: 100%;
+    }
+    .grid1row2 {
+        width: 80%;
+    }
   }

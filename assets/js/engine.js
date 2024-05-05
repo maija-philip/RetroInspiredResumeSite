@@ -48,6 +48,35 @@ function loadProjectDetail() {
     title.appendChild(document.createTextNode(project[0].name))
     sectionForData.appendChild(title)
 
+    if (project[0].link != null) {
+        const link = document.createElement("a")
+        link.href = project[0].link
+        link.appendChild(document.createTextNode(`Take a look at ${project[0].name}`))
+        link.setAttribute('target', '_blank');
+        sectionForData.appendChild(link)
+    }
+    if (project[0].github != null) {
+        const github = document.createElement("a")
+        github.href = project[0].github
+        github.appendChild(document.createTextNode(`Take a look at the Github`))
+        github.setAttribute('target', '_blank');
+        sectionForData.appendChild(github)
+    }
+    if (project[0].githubIOS != null) {
+        const github = document.createElement("a")
+        github.href = project[0].githubIOS
+        github.appendChild(document.createTextNode(`Take a look at the Github for IOS`))
+        github.setAttribute('target', '_blank');
+        sectionForData.appendChild(github)
+    }
+    if (project[0].githubAndroid != null) {
+        const github = document.createElement("a")
+        github.href = project[0].githubAndroid
+        github.appendChild(document.createTextNode(`Take a look at the Github for Android`))
+        github.setAttribute('target', '_blank');
+        sectionForData.appendChild(github)
+    }
+
     const body = document.createElement("p")
     body.appendChild(document.createTextNode(project[0].desc))
     sectionForData.appendChild(body)

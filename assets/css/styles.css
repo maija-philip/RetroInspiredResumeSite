@@ -232,11 +232,15 @@ button {
 
 /* Grid 1: Art */
 .grid1row1 {
+    display: flex;
+    margin: auto;
     width: 70%;
     margin-top: 40px;
     align-items: end;
 }
 .grid1row2 {
+    display: flex;
+    margin: auto;
     width: 60%;
     margin-bottom: 40px;
     align-items: start;
@@ -261,6 +265,8 @@ button {
 }
 
 .grid2row2 {
+    display: flex;
+    margin: auto;
     width: 70%;
     margin-bottom: 40px;
     align-items: start;
@@ -289,4 +295,19 @@ footer {
     margin: 0;
     padding: 40px;
     text-align: center;
+}
+
+#projectfooter {
+    background-color: transparent;
+}
+
+/***** Project Detail Page *****/
+#projectinfo a {
+    display: block;
+    color: var(--on-surface-variant-light);
+    margin: 10px 0;
+}
+
+#projectinfo p {
+    margin-top: 40px;
 }
